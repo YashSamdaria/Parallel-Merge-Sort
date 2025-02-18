@@ -15,7 +15,7 @@ void ParallelMergeSort::recursiveSort(int left, int right)
         return;
     }
 
-    const int THRESHOLD = 100;
+    const int THRESHOLD = 5000;
     if (right - left < THRESHOLD)
     {
         std::sort((*nums).begin() + left, (*nums).begin() + right + 1);
